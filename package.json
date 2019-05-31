@@ -53,7 +53,8 @@
   "scripts": {
     "test-perf": "coffee test/perf.coffee && coffee test/performance-tests.coffee",
     "test-spec": "coffee test/all-edn-tests.coffee && coffee test/all-invalid-edn-tests.coffee && coffee test/assertion.coffee && coffee test/primitives.coffee && coffee test/unify.coffee",
-    "test2": "npm run test-perf && nyc --extension .coffee npm run test-spec"
+    "test2": "npm run test-perf && nyc --extension .coffee npm run test-spec",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "nyc": {
     "exclude": [
